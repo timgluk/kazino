@@ -1,0 +1,153 @@
+<!--------Modal-------->
+
+<!--Заказ обратного звонка-->
+<div class="state" data-state="callto">
+	<div class="state-box reviews-state">
+		<div class="close spec"><i class="icon icon-error"></i></div>
+		<div class="title">Заказ обратного звонка</div>
+		<forma class="forma">
+			<div class="wide-row">
+				<span class="laben">Имя <mark>*</mark></span>
+				<input type="text" required>
+			</div>
+			<div class="wide-row">
+				<span class="laben"><img src="img/icons/flag.png" alt=""> <mark>*</mark></span>
+				<input type="tel" placeholder="+7 (___) __ __ ___" required>
+			</div>
+			<label class="checkbox acept">
+				<input type="checkbox" name="acept" value="1" checked>
+				<span>
+					<p>Нажимая кнопку «Жду звонка!», Вы даете
+						свое согласие на обработку персональных
+						данных, в соответствии<a href="">Политикой</a></p>
+				</span>
+			</label>
+			<button class="button button-dark to-state" data-state="thanks">Жду звонка!</button>
+		</forma>
+	</div>
+</div>
+
+<!--Быстрый заказ-->
+<div class="state" data-state="qwick">
+	<div class="state-box reviews-state">
+		<div class="close spec"><i class="icon icon-error"></i></div>
+		<div class="title">Быстрый заказ</div>
+		<forma class="forma">
+			<div class="wide-row">
+				<span class="laben">Имя <mark>*</mark></span>
+				<input type="text" required>
+			</div>
+			<div class="wide-row">
+				<span class="laben"><img src="img/icons/flag.png" alt=""> <mark>*</mark></span>
+				<input type="tel" placeholder="+7 (___) __ __ ___" required>
+			</div>
+			<label class="checkbox acept">
+				<input type="checkbox" name="acept" value="1" checked>
+				<span>
+					<p>Нажимая кнопку «Заказать», Вы даете
+						свое согласие на обработку персональных
+						данных, в соответствии с <a href="">Политикой</a></p>
+				</span>
+			</label>
+			<button class="button button-dark to-state" data-state="thanks">Заказать</button>
+		</forma>
+	</div>
+</div>
+
+<!--Спасибо!-->
+<div class="state" data-state="thanks">
+	<div class="state-box reviews-state">
+		<div class="close spec"><i class="icon icon-error"></i></div>
+		<div class="title">Спасибо!</div>
+		<p class="center">В ближайшее время<br>
+			Вам перезвонит наш менеджер</p>
+		<button class="button button-yelow close">ОК</button>
+	</div>
+</div>
+<a href=""></a>
+<!--Спасибо за заказ!-->
+<div class="state" data-state="thanks-order">
+	<div class="state-box reviews-state">
+		<div class="close spec"><i class="icon icon-error"></i></div>
+		<div class="title">Спасибо за заказ!</div>
+		<p class="center">В ближайшее время<br>
+			Вам перезвонит наш менеджер</p>
+		<button class="button button-yelow close">ОК</button>
+	</div>
+</div>
+
+<!--Спасибо за отзыв-->
+<div class="state" data-state="thanks-reviev">
+	<div class="state-box reviews-state">
+		<div class="close spec"><i class="icon icon-error"></i></div>
+		<div class="title">Спасибо!</div>
+		<p class="center">Ваше мнение позволит нам стать лучше!</p>
+		<button class="button button-yelow close">ОК</button>
+	</div>
+</div>
+
+<!--Оставить отзыв-->
+<div class="state" data-state="reviews">
+	<div class="state-box reviews-form ">
+		<div class="close spec"><i class="icon icon-error"></i></div>
+
+		<div class="title">Отзыв</div>
+		<forma class="forma">
+			<div class="first-row">
+				<span class="laben">Имя <mark>*</mark></span>
+				<input type="text" required>
+			</div>
+			<div class="first-row">
+				<span class="laben"><img src="img/icons/flag.png" alt=""> <mark>*</mark></span>
+				<input type="tel" placeholder="+7 (___) __ __ ___" required>
+			</div>
+			<div class="first-row">
+				<div class="rait">
+					<span>Ваша оценка<mark>*</mark></span>
+					<div class="rait-stars">
+						<label class="star">
+							<input type="radio" name="rating" value="1">
+							<span></span>
+						</label>
+						<label class="star">
+							<input type="radio" name="rating" value="2">
+							<span></span>
+						</label>
+						<label class="star">
+							<input type="radio" name="rating" value="3">
+							<span></span>
+						</label>
+						<label class="star">
+							<input type="radio" name="rating" value="4">
+							<span></span>
+						</label>
+						<label class="star">
+							<input type="radio" name="rating" value="5">
+							<span></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="first-row">
+				<div class="file-box">
+					<img src="img/icons/fille.png" alt="">
+					<input type="file" id="files" name="files[]" multiple />
+					<output id="list"></output>
+				</div>
+			</div>
+			<div class="wide-row">
+				<textarea placeholder="Текст отзыва"></textarea>
+			</div>
+			<label class="checkbox acept">
+				<input type="checkbox" name="acept" value="1" checked>
+				<span>
+					<p>Нажимая кнопку «Жду звонка!», Вы даете
+						свое согласие на обработку персональных
+						данных, в соответствии<a href="">Политикой</a></p>
+				</span>
+			</label>
+			<button class="button button-dark to-state" data-state="thanks-reviev">Оставить отзыв</button>
+		</forma>
+
+	</div>
+</div>

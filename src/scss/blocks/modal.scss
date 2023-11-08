@@ -1,0 +1,73 @@
+/*------ modal ------*/
+.state {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&.active {
+		visibility: visible;
+		opacity: 1;
+		z-index: 99999;
+		background: rgba(0, 0, 0, 0.6);
+		backdrop-filter: blur(0.625rem);
+	}
+}
+
+.state-box {
+	width: 40rem;
+	max-width: 96%;
+	max-height: 96%;
+	height: auto;
+	overflow-y: auto;
+	background: #ffffff;
+	border-radius: 0.5rem;
+	position: relative;
+	padding: 1.875rem 2.1875rem;
+
+	.close {
+		position: absolute;
+		top: 1.875rem;
+		right: 1.875rem;
+		width: 1.875rem;
+		height: 1.875rem;
+		cursor: pointer;
+		@media (max-width: 30rem) {
+			top: 1.5rem;
+			right: 1rem;
+		}
+		&:before,
+		&:after {
+			content: "";
+			display: block;
+			width: 1.875rem;
+			height: 1px;
+			background: #000;
+			position: absolute;
+			transition: 0.6s;
+			top: 0.3rem;
+		}
+		&:before {
+			transform: rotate(45deg);
+		}
+		&:after {
+			transform: rotate(-45deg);
+		}
+		&:hover {
+			&:before,
+			&:after {
+
+			}
+		}
+	}
+}
+
+.to-state {
+	cursor: pointer;
+}
+

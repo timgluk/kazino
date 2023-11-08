@@ -1,0 +1,41 @@
+/***** FONTS *****/
+@import "fonts";
+@import "variables";
+
+/***** GENERAL ELEMENTS *****/
+// $global-color-light: rgba(239, 59, 82, 0.15);
+// $global-color: #ef3b52;
+// $global-color-dark: #e3384e;
+// $global-color-extradark: #d43449;
+
+// $font-color: #333333;
+// $font-color-light: #777777;
+
+@import "general"; 
+// @import "blocks/title"; 
+// @import "blocks/buttons"; 
+
+/***** BLOCKS GLOBAL *****/
+@import "blocks/header"; 
+// @import "blocks/navigation"; 
+// @import 'blocks/footer'; 
+
+/***** COMPONENTS GLOBAL *****/
+// @import "blocks/carousel"; 
+// @import "blocks/post"; 
+// @import "blocks/sort"; 
+// @import "blocks/article"; 
+// @import "blocks/tabs"; 
+// @import "blocks/form"; 
+// @import "blocks/modal"; 
+
+/***** SECTIONS GLOBAL (Widgets) *****/
+// @import "widgets/widget-sticky"; 
+// @import "widgets/widget-filtertop"; 
+// @import "widgets/widget-filter"; 
+// @import "widgets/widget-posts"; 
+// @import "widgets/widget-cat"; 
+// @import "widgets/widget-search"; 
+
+/***** Page GLOBAL *****/
+// @import "pages/content-page"; 
