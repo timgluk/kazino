@@ -23,21 +23,6 @@ header {
       padding: 0 10px;
       position: relative;
 
-      .logo {
-        display: flex;
-        align-items: center;
-        font-family: $general-font;
-        gap: 16px;
-        span {
-          text-transform: uppercase;
-          font-weight: 600;
-          font-size: 20px;
-          .color {
-            color: #185d41;
-          }
-        }
-      }
-
       .navigation {
         display: flex;
         align-items: center;
@@ -143,6 +128,21 @@ header {
           background: #fff;
         }
       }
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: $general-font;
+  gap: 16px;
+  span {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    .color {
+      color: #185d41;
     }
   }
 }
