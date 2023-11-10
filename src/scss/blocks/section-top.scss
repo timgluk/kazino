@@ -5,6 +5,7 @@
   width: 100%;
   color: #fff;
   font-family: $general-font;
+  margin-bottom: 0;
   img {
     width: 100%;
   }
@@ -17,7 +18,7 @@
     margin-top: 100px;
     .top-title {
       font-size: 48px;
-      font-weight: 700;
+      // font-weight: 700;
       text-transform: uppercase;
       line-height: 120%;
       margin-bottom: 10px;

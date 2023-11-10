@@ -1,0 +1,28 @@
+.pagination {
+  width: 100%;
+  padding: 24px 0;
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    .prev,
+    .next {
+      color: #185D41!important;
+    }
+    .page-numbers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      color: #1d2730;
+      font-family: "OpenSans";
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .current {
+      border-radius: 3px;
+      background: #1bae72;
+    }
+  }
+}
