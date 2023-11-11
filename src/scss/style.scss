@@ -26,6 +26,9 @@
 @import 'blocks/section-pagination';
 @import 'blocks/section-text-content-box';
 
+@import 'blocks/aside-right-column';
+
+
 
 
 /***** COMPONENTS GLOBAL *****/
@@ -38,12 +41,12 @@
 // @import "blocks/modal"; 
 
 /***** SECTIONS GLOBAL (Widgets) *****/
-// @import "widgets/widget-sticky"; 
+@import "widgets/widget-top-casinos"; 
+@import "widgets/widget-img-bg"; 
 // @import "widgets/widget-filtertop"; 
 // @import "widgets/widget-filter"; 
 // @import "widgets/widget-posts"; 
 // @import "widgets/widget-cat"; 
-// @import "widgets/widget-search"; 
 
 /***** Page GLOBAL *****/
 // @import "pages/content-page"; 

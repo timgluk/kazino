@@ -1,0 +1,66 @@
+.widget-top-casinos {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: $general-font;
+  gap: 16px;
+
+  width: 300px;
+  padding: 10px;
+  // margin-left: 30px;
+  margin-top: 35px;
+
+  .widget-casinos-title {
+    color: #3a3a3a;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34.32px; /* 156% */
+    text-transform: uppercase;
+    padding-left: 10px;
+  }
+
+  .casino-box {
+    display: flex;
+    cursor: pointer;
+    .widget-casino-img {
+      width: 58px;
+      height: 58px;
+      border-radius: 8px;
+      margin-right: 8px;
+      background: lightgray 0px 0px / 100% 100% no-repeat;
+    }
+    .title-box {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      justify-content: space-around;
+      .widget-casino-title {
+        color: #1bae72;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      .widget-casino-desc {
+        color: #141717;
+        font-size: 13.125px;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+  }
+
+  .casinos-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    padding: 8px 60px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background: #185d41;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+    margin: auto;
+  }
+}
