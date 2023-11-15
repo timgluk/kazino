@@ -1,0 +1,117 @@
+.widget-casino-news {
+  padding: 0 10px;
+  border-top: 1px solid #E3E7EF;
+  border-bottom: 1px solid #E3E7EF;
+  margin-bottom: 5px;
+
+  .widget-casino-news-title {
+    font-family: $inter600;
+    color: #3a3a3a;
+    font-size: 18px;
+    text-transform: uppercase;
+    // margin: 5px 0;
+  }
+
+  .widget-casino-news-title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+
+    .news-title-link {
+      color: #45674e;
+      font-size: 14px;
+      font-family: $inter400;
+    }
+  }
+
+  img {
+    border-radius: 10px;
+    background: url(<path-to-image>),
+      lightgray -32.941px 0px / 123.529% 100% no-repeat;
+  }
+
+  .widget-casino-news-title-font {
+    margin: 6px 0;
+    letter-spacing: 1px;
+  }
+
+  .announcement {
+    color: #3a3a3a;
+    font-size: 13.672px;
+    font-family: $inter400;
+    line-height: 21.98px; /* 160.768% */
+    margin: 8px 0;
+  }
+
+  .blogs-box {
+    .desc-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin: 8px 0;
+      .blogs-box-title {
+        color: #185d41;
+        font-size: 12px;
+        font-family: $inter400;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .blogs-box-date {
+        color: #c3c3c3;
+        font-size: 10px;
+        font-family: $inter400;
+        text-transform: uppercase;
+      }
+    }
+
+    .blog-wrap {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 120px;
+      height: 85px;
+      column-gap: 8px;
+      padding: 8px 0;
+      box-sizing: content-box;
+      border-top: 1px solid #f1f1f1;
+      .blog-title {
+        color: #3a3a3a;
+        font-family: $inter700;
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 120%; /* 19.2px */
+        align-self: center;
+        letter-spacing: -0.7px;
+      }
+      .desc-box {
+        margin: 0;
+      }
+      img {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        justify-self: end;
+        align-self: center;
+      }
+    }
+  }
+
+  .widget-casino-news-button {
+    display: flex;
+    padding: 8px 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 3px auto 0;
+    width: 195px;
+    background: #185d41;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    font-family: $inter700;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}

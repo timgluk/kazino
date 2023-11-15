@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /***** FONTS *****/
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter-Bold";
   font-display: swap;
-  src: url("../fonts/Inter.woff2") format("woff2"), url("../fonts/Inter.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
@@ -15,10 +15,37 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Inter-Light";
+  font-display: swap;
+  src: url("../fonts/Inter-Light.woff2") format("woff2"), url("../fonts/Inter-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
   font-family: "OpenSans";
   font-display: swap;
   src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter-Regular";
+  font-display: swap;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter-SemiBold";
+  font-display: swap;
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter-Medium";
+  font-display: swap;
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 /***** GENERAL ELEMENTS *****/
@@ -772,6 +799,7 @@ footer .footer-wrapper .copyright .years {
   margin-top: 100px;
 }
 .top .top-wrapper .top-title {
+  font-family: "Inter-Bold";
   font-size: 48px;
   text-transform: uppercase;
   line-height: 120%;
@@ -807,7 +835,6 @@ footer .footer-wrapper .copyright .years {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-grow: 2;
   gap: 20px;
 }
 .content-main .items .item {
@@ -1078,7 +1105,7 @@ footer .footer-wrapper .copyright .years {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px 0;
   background: linear-gradient(180deg, rgba(1, 1, 1, 0) 50%, #010101 100%);
 }
 .widget-img-bg-button {
@@ -1096,6 +1123,260 @@ footer .footer-wrapper .copyright .years {
   font-family: "Montserrat-Bold";
   font-size: 20px;
   letter-spacing: 0.2px;
+}
+
+.widget-casino-news {
+  padding: 0 10px;
+  border-top: 1px solid #E3E7EF;
+  border-bottom: 1px solid #E3E7EF;
+  margin-bottom: 5px;
+}
+.widget-casino-news .widget-casino-news-title {
+  font-family: "Inter-SemiBold";
+  color: #3a3a3a;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.widget-casino-news .widget-casino-news-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+.widget-casino-news .widget-casino-news-title-box .news-title-link {
+  color: #45674e;
+  font-size: 14px;
+  font-family: "Inter-Regular";
+}
+.widget-casino-news img {
+  border-radius: 10px;
+  background: url(<path-to-image>), lightgray -32.941px 0px/123.529% 100% no-repeat;
+}
+.widget-casino-news .widget-casino-news-title-font {
+  margin: 6px 0;
+  letter-spacing: 1px;
+}
+.widget-casino-news .announcement {
+  color: #3a3a3a;
+  font-size: 13.672px;
+  font-family: "Inter-Regular";
+  line-height: 21.98px; /* 160.768% */
+  margin: 8px 0;
+}
+.widget-casino-news .blogs-box .desc-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 8px 0;
+}
+.widget-casino-news .blogs-box .desc-box .blogs-box-title {
+  color: #185d41;
+  font-size: 12px;
+  font-family: "Inter-Regular";
+  text-transform: uppercase;
+  margin: 0;
+}
+.widget-casino-news .blogs-box .desc-box .blogs-box-date {
+  color: #c3c3c3;
+  font-size: 10px;
+  font-family: "Inter-Regular";
+  text-transform: uppercase;
+}
+.widget-casino-news .blogs-box .blog-wrap {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 120px;
+  height: 85px;
+  column-gap: 8px;
+  padding: 8px 0;
+  box-sizing: content-box;
+  border-top: 1px solid #f1f1f1;
+}
+.widget-casino-news .blogs-box .blog-wrap .blog-title {
+  color: #3a3a3a;
+  font-family: "Inter-Bold";
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 120%; /* 19.2px */
+  align-self: center;
+  letter-spacing: -0.7px;
+}
+.widget-casino-news .blogs-box .blog-wrap .desc-box {
+  margin: 0;
+}
+.widget-casino-news .blogs-box .blog-wrap img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-self: end;
+  align-self: center;
+}
+.widget-casino-news .widget-casino-news-button {
+  display: flex;
+  padding: 8px 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: 3px auto 0;
+  width: 195px;
+  background: #185d41;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+  color: #fff;
+  font-family: "Inter-Bold";
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.widget-latest-articles {
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+.widget-latest-articles .widget-latest-articles-title {
+  font-family: "Inter-SemiBold";
+  color: #3a3a3a;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 120%;
+  margin-top: 5px;
+}
+.widget-latest-articles .widget-latest-articles-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+.widget-latest-articles .widget-latest-articles-title-box .articles-title-link {
+  color: #45674e;
+  font-size: 14px;
+  font-family: "Inter-Regular";
+}
+.widget-latest-articles img {
+  border-radius: 10px;
+  background: url(<path-to-image>), lightgray -32.941px 0px/123.529% 100% no-repeat;
+}
+.widget-latest-articles .desc-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 8px 0;
+}
+.widget-latest-articles .desc-box .blogs-box-title {
+  color: #185d41;
+  font-size: 12px;
+  font-family: "Inter-Regular";
+  text-transform: uppercase;
+  margin: 0;
+}
+.widget-latest-articles .desc-box .blogs-box-date {
+  color: #c3c3c3;
+  font-size: 10px;
+  font-family: "Inter-Regular";
+  text-transform: uppercase;
+}
+.widget-latest-articles .article {
+  padding: 20px 0;
+  border-top: 1px solid #E3E7EF;
+}
+.widget-latest-articles .article .article-title {
+  color: #3a3a3a;
+  font-family: "Inter-Bold";
+  font-size: 16px;
+  line-height: 120%; /* 19.2px */
+  text-transform: uppercase;
+}
+.widget-latest-articles .widget-article-button {
+  display: flex;
+  padding: 8px 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: 3px auto 0;
+  width: 195px;
+  white-space: nowrap;
+  background: #185d41;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+  color: #fff;
+  font-family: "Inter-Bold";
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/*-----filter-----*/
+.filter {
+  width: 220px;
+}
+.filter__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1d2730;
+  font-family: "Inter-Bold";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.filter__title-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+.filter__title-box span {
+  color: #1d2730;
+  font-family: "Inter-Regular";
+  font-size: 12px;
+  text-transform: lowercase;
+}
+.filter__subtitle {
+  color: #858a8f;
+  font-family: "Inter-Bold";
+  font-size: 14px;
+}
+
+.filter__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 8px 0 16px;
+}
+.filter__items .filter__item {
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  background: #f6f6f7;
+  color: #1d2730;
+  font-family: "OpenSans";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px; /* 128.571% */
+}
+.filter__items .filter__item span {
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+.filter__items .filter__item span::after {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 1px;
+  background-color: #858A8F;
+  transform: translateX(4px) rotate(-45deg);
+}
+.filter__items .filter__item span::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 1px;
+  background-color: #858A8F;
+  transform: translateX(4px) rotate(45deg);
 }
 
 /***** Page GLOBAL *****/
