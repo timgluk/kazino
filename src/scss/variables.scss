@@ -1,4 +1,4 @@
-$general-font: "Inter";
+$general-font: "Inter", sans-serif;
 
 $inter300: "Inter-Light";
 $inter400: "Inter-Regular";
@@ -7,3 +7,11 @@ $inter600: "Inter-SemiBold";
 $inter700: "Inter-Bold";
 
 $openSans: "OpenSans";
+
+$baseFontSize: 16; // базовый размер шрифта 
+
+/* функция перевода font px в rem */
+
+@function pxToRem($pxValue) {
+  @return calc($pxValue / $baseFontSize) * 1rem;
+};
