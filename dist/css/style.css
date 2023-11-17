@@ -1031,6 +1031,50 @@ footer .footer-wrapper .copyright .years {
   transform: rotate(90deg);
 }
 
+.about-game__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.about-game .pragmatic {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 3px;
+  background: #f0f0f0;
+}
+.about-game .pragmatic img {
+  border-radius: 4px;
+}
+.about-game .pragmatic__title {
+  color: #1d2730;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  text-transform: uppercase;
+  margin-right: 13px;
+}
+.about-game .pragmatic .button-box .pragmatic__button {
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 8px;
+  width: 240px;
+  border-radius: 2px;
+  border: 1px solid #185d41;
+  margin-bottom: 8px;
+  color: #1d2730;
+  font-size: 14px;
+  font-weight: 700;
+}
+.about-game .pragmatic .button-box .pragmatic__button::after {
+  content: "➞";
+  color: #25e39a;
+  text-align: right;
+  margin-left: auto;
+}
+
 /***** COMPONENTS GLOBAL *****/
 article {
   width: 100%;
