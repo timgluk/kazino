@@ -49,7 +49,6 @@
   font-style: normal;
 }
 /* функция перевода font px в rem */
-/***** GENERAL ELEMENTS *****/
 /*-----generals-----*/
 html {
   font-size: 16px;
@@ -940,10 +939,100 @@ footer .footer-wrapper .copyright .years {
   margin-left: 30px;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 24px;
+}
+.cards .card {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 95px;
+  padding: 5px 7px 0 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  overflow: hidden;
+  border-radius: 3px;
+  border-left: 4px solid #1bae72;
+  background: #f0f0f0;
+}
+.cards .card svg {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  width: 90px;
+  height: 90px;
+}
+.cards .card svg path {
+  fill: #cdd6dd;
+}
+.cards .card__title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.cards .card__title-box .card__title {
+  margin: 0;
+  color: #4a5b68;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: none;
+}
+.cards .card__title-box .card__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #4a5b68;
+  border-radius: 50%;
+  font-family: monospace;
+  font-weight: 600;
+  color: #4a5b68;
+  font-size: 13px;
+  cursor: pointer;
+}
+.cards .card__desc {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #4a5b68;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.cards .card__desc svg {
+  position: static;
+  width: 28px;
+  height: 28px;
+}
+.cards .card__desc svg path {
+  fill: #1bae72;
+}
+.cards .card__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #25e39a;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.005px;
+}
+.cards .card__link::before {
+  content: "➞";
+  transform: rotate(90deg);
+}
+
 /***** COMPONENTS GLOBAL *****/
 article {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   box-sizing: border-box;
   margin-top: 24px;
@@ -959,7 +1048,13 @@ article h3 {
   font-size: 1.25rem;
   color: #3a3a3a;
   line-height: 120%;
+  margin-bottom: 24px;
+}
+article h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.12px;
   margin-bottom: 10px;
+  color: #1D2730;
 }
 article p {
   color: #626262;
@@ -971,79 +1066,6 @@ article p {
 article p a {
   color: #1bae72;
   text-decoration: underline;
-}
-article .questions h2 {
-  font-size: 1.5rem;
-  letter-spacing: 0.12px;
-  margin-bottom: 10px;
-}
-article .questions .accordion-box {
-  margin-bottom: 8px;
-}
-article .questions .accordion-box .accordion-title-box {
-  position: relative;
-  display: flex;
-  padding: 0px 16px;
-  justify-content: space-between;
-  align-items: center;
-  height: 55px;
-  border-radius: 3px;
-  background: #fff;
-  box-shadow: 0px 1px 0px 0px #e3e7ef;
-  cursor: pointer;
-}
-article .questions .accordion-box .accordion-title-box .accordion-title {
-  color: #1d2730;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.08px;
-  text-transform: uppercase;
-  margin: 0;
-}
-article .questions .accordion-box .accordion-title-box .accordion-arrow {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 18px;
-  height: 18px;
-  transform: rotate(180deg);
-}
-article .questions .accordion-box .accordion-title-box .accordion-arrow_active {
-  transform: none;
-}
-article .questions .accordion-box .accordion-title-box .accordion-arrow::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 12px;
-  transform: translateX(-3px) rotate(45deg);
-  background-color: #4a5b68;
-}
-article .questions .accordion-box .accordion-title-box .accordion-arrow::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 12px;
-  transform: translateX(4px) rotate(-45deg);
-  background-color: #4a5b68;
-}
-article .questions .accordion-box .accordion-text {
-  display: none;
-  color: #3a3a3a;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.08px;
-  padding: 16px 32px;
-  margin: 0;
-  border-radius: 0px 0px 3px 3px;
-  background: #e3e7ef;
-  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease-in-out;
-}
-article .questions .accordion-box .accordion-text-visible {
-  display: flex;
 }
 
 /***** SECTIONS GLOBAL (Widgets) *****/
@@ -1387,6 +1409,75 @@ article .questions .accordion-box .accordion-text-visible {
   width: 1px;
   background-color: #858A8F;
   transform: translateX(4px) rotate(45deg);
+}
+
+.accordion {
+  margin-bottom: 8px;
+}
+.accordion .accordion-title-box {
+  position: relative;
+  display: flex;
+  padding: 0px 16px;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0px 1px 0px 0px #e3e7ef;
+  cursor: pointer;
+}
+.accordion .accordion-title-box .accordion-title {
+  color: #1d2730;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.08px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.accordion .accordion-title-box .accordion-arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  transform: rotate(180deg);
+}
+.accordion .accordion-title-box .accordion-arrow_active {
+  transform: none;
+}
+.accordion .accordion-title-box .accordion-arrow::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  transform: translateX(-3px) rotate(45deg);
+  background-color: #4a5b68;
+}
+.accordion .accordion-title-box .accordion-arrow::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  transform: translateX(4px) rotate(-45deg);
+  background-color: #4a5b68;
+}
+.accordion .accordion-text {
+  display: none;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.08px;
+  padding: 16px 32px;
+  margin: 0;
+  border-radius: 0px 0px 3px 3px;
+  background: #e3e7ef;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+.accordion .accordion-text-visible {
+  display: flex;
 }
 
 /***** Page GLOBAL *****/

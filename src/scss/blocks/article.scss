@@ -7,8 +7,6 @@ article {
     text-transform: uppercase;
   }
 
-  display: flex;
-  flex-direction: column;
   width: 100%;
   box-sizing: border-box;
   margin-top: 24px;
@@ -17,7 +15,14 @@ article {
     font-size: pxToRem(20);
     color: #3a3a3a;
     line-height: 120%;
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    font-size: pxToRem(24);
+    letter-spacing: 0.12px;
     margin-bottom: 10px;
+    color: #1D2730;
   }
 
   p {
@@ -30,85 +35,6 @@ article {
     a {
       color: #1bae72;
       text-decoration: underline;
-    }
-  }
-
-  .questions {
-    h2 {
-      font-size: pxToRem(24);
-      letter-spacing: 0.12px;
-      margin-bottom: 10px;
-    }
-
-    .accordion-box {
-      margin-bottom: 8px;
-      .accordion-title-box {
-        position: relative;
-        display: flex;
-        padding: 0px 16px;
-        justify-content: space-between;
-        align-items: center;
-        height: 55px;
-        border-radius: 3px;
-        background: #fff;
-        box-shadow: 0px 1px 0px 0px #e3e7ef;
-        cursor: pointer;
-        .accordion-title {
-          color: #1d2730;
-          font-size: 16px;
-          font-weight: 700;
-          letter-spacing: 0.08px;
-          text-transform: uppercase;
-          margin: 0;
-        }
-        .accordion-arrow {
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 18px;
-          height: 18px;
-          transform: rotate(180deg);
-          &_active {
-            transform: none;
-          }
-  
-          &::after {
-            content: "";
-            position: absolute;
-            width: 2px;
-            height: 12px;
-            transform: translateX(-3px) rotate(45deg);
-            background-color: #4a5b68;
-          }
-          &::before {
-            content: "";
-            position: absolute;
-            width: 2px;
-            height: 12px;
-            transform: translateX(4px) rotate(-45deg);
-            background-color: #4a5b68;
-          }
-        }
-      }
-  
-      .accordion-text {
-        display: none;
-        color: #3a3a3a;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: 0.08px;
-        padding: 16px 32px;
-        margin: 0;
-        border-radius: 0px 0px 3px 3px;
-        background: #e3e7ef;
-        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        transition: all 0.3s ease-in-out;;
-        &-visible {
-          display: flex;
-        }
-      }
     }
   }
 }

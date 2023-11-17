@@ -1,0 +1,98 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-family: $general-font;
+  margin-bottom: 24px;
+  .card {
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 95px;
+    padding: 5px 7px 0 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    overflow: hidden;
+    border-radius: 3px;
+    border-left: 4px solid #1bae72;
+    background: #f0f0f0;
+    svg {
+      position: absolute;
+      right: 5px;
+      top: 20px;
+      width: 90px;
+      height: 90px;
+      path {
+        fill: #cdd6dd;
+      }
+    }
+
+    &__title-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .card__title {
+        margin: 0;
+        color: #4a5b68;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        text-transform: none;
+      }
+
+      .card__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border: 3px solid #4a5b68;
+        border-radius: 50%;
+        font-family: monospace;
+        font-weight: 600;
+        color: #4a5b68;
+        font-size: 13px;
+        cursor: pointer;
+      }
+    }
+
+    &__desc {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: #4a5b68;
+
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      text-transform: uppercase;
+
+      svg {
+        position: static;
+        width: 28px;
+        height: 28px;
+        path {
+          fill: #1bae72;
+        }
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #25e39a;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0.005px;
+      &::before {
+        content: "\279E";
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

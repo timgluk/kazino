@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Homepage</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  @@include('template/meta.html')
+</head>
+
+<body>
+  @@include('template/header.html')
+
+  <main class="page-content">
+    <!--------Content--------->
+    <section class="top">
+      <div class="top-wrapper">
+        <h1 class="top-title">best online<br>casino in 2023</h1>
+        <p class="top-desc">Наши эксперты составили рейтинг более 5000 сайтов и выбрали лучшие онлайн казино. Найдите
+          топ онлайн казино на реальные деньги.</p>
+      </div>
+    </section>
+    <section class="content">
+      <aside style="min-width: 300px;">
+        @@include('widgets/widget-filter.html')
+      </aside>
+      <section class="content-main">
+        <article class="text-content-box">
+          <h2>Gates of Olympus</h2>
+          <p>Try Gates of Olympus slot online for free in demo mode with no download and no registration required and
+            read the game's review before playing for real money.</p>
+          
+          @@include('widgets/card.html')
+
+          <h3>Reputation and trustworthiness</h3>
+          <p>Our number one consideration whenever we sit down to write an online casino review is
+            the overall trustworthiness and reputation of the platform. In our opinion, no other aspect comes close to
+            the importance of this one. A site could have thousands of games, amazing bonuses, and a ton of payment
+            methods, but none of that matters if the site is untrustworthy.</p>
+          <p>We want our readers to have a safe experience when gambling online, and that is why we
+            only recommend casinos with flawless reputations.</p>
+          <div class="questions">
+            <h2 class="questions-title">Frequently asked questions</h2>
+            @@include('widgets/accordion.html')
+          </div>
+        </article>
+      </section>
+      <aside class="rigth-column">
+
+        @@include('widgets/widget-top-casinos.html')
+        @@include('widgets/widget-img-bg.html')
+        @@include('widgets/widget-casino-news.html')
+        @@include('widgets/widget-latest-articles.html')
+
+      </aside>
+    </section>
+  </main>
+
+  @@include('template/footer.html')
+  @@include('template/scripts.html')
+</body>
+
+</html>
