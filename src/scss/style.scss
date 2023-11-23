@@ -18,9 +18,9 @@
 @import 'blocks/aside-right-column';
 @import 'blocks/cards';
 @import 'blocks/about-game';
+@import 'blocks/gates-of';
 
 /***** COMPONENTS GLOBAL *****/
-// @import "blocks/carousel"; 
 // @import "blocks/post"; 
 // @import "blocks/sort"; 
 @import "blocks/article"; 
@@ -35,9 +35,11 @@
 @import "widgets/widget-latest-articles"; 
 @import "widgets/widget-filter"; 
 @import "widgets/accordion"; 
+@import "widgets/slider"; 
+
 // @import "widgets/widget-filtertop"; 
 // @import "widgets/widget-posts"; 
 // @import "widgets/widget-cat"; 
 
 /***** Page GLOBAL *****/
-// @import "pages/content-page"; 
+@import "pages/page-game"; 

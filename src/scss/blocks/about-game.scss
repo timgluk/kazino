@@ -1,4 +1,5 @@
 .about-game {
+  margin-bottom: 24px;
   &__title {
     display: flex;
     align-items: center;
@@ -25,6 +26,7 @@
     }
 
     .button-box {
+      
       .pragmatic__button {
         display: flex;
         padding: 8px 16px;
@@ -42,6 +44,9 @@
           color: #25e39a;
           text-align: right;
           margin-left: auto;
+        }
+        &:last-child {
+          margin-bottom: 0;
         }
       }
     }
