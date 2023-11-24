@@ -37,6 +37,7 @@
 @import "widgets/widget-filter"; 
 @import "widgets/accordion"; 
 @import "widgets/slider"; 
+@import "widgets/widget-popular-news"; 
 
 // @import "widgets/widget-filtertop"; 
 // @import "widgets/widget-posts"; 
@@ -44,3 +45,4 @@
 
 /***** Page GLOBAL *****/
 @import "pages/page-game"; 
+@import "pages/page-news"; 

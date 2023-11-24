@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Homepage</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  @@include('template/meta.html')
+</head>
+
+<body>
+  @@include('template/header.html')
+
+  <main class="page-content">
+    <!--------Content--------->
+    <section class="top">
+      <div class="top-wrapper">
+
+      </div>
+    </section>
+    <section class="content page-news">
+      
+      <aside class="rigth-column">
+
+        @@include('widgets/widget-top-casinos.html')
+        @@include('widgets/widget-img-bg.html')
+        @@include('widgets/popular-news.html')
+
+      </aside>
+    </section>
+  </main>
+
+  @@include('template/footer.html')
+  @@include('template/scripts.html')
+</body>
+
+</html>
