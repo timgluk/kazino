@@ -22,9 +22,8 @@ article {
     font-size: pxToRem(24);
     letter-spacing: 0.12px;
     margin-bottom: 10px;
-    color: #1D2730;
+    color: #1d2730;
     line-height: 28px; /* 116.667% */
-
   }
 
   p {
@@ -37,6 +36,30 @@ article {
     a {
       color: #1bae72;
       text-decoration: underline;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    
+    li {
+      position: relative;
+      color: #626262;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 120%;
+      padding-left: 16px;
+      margin-bottom: 16px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: linear-gradient(264deg, #1bae72 3%, #146444 95.71%);
+      }
     }
   }
 }
