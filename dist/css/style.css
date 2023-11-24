@@ -1788,11 +1788,21 @@ article ul li::before {
   line-height: 24px; /* 120% */
   text-transform: uppercase;
   padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
 }
 .page-news__nav .nav__items .nav__item:first-child {
   margin-left: 20px;
 }
 .page-news__nav .nav__items .active {
   position: relative;
-  border-bottom: 2px solid #1bae72;
+}
+.page-news__nav .nav__items .active::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -3px;
+  background-color: #1bae72;
+  position: absolute;
+  z-index: 10;
 }
